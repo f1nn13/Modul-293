@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+</head>
+<body>
+    <h2>Login</h2>
+            <label for="email">Email:</label>
+            <input type="email" name="email" id="email" required>
+            <label for="password">Password:</label>
+            <input type="text" name="password" id="password" required>
+            <button type="submit"  id="log" class="login-button">Login</button>
+
+<script>
+    
+function login() {
+    var email = document.getElementById("email");
+    var passwort = document.getElementById("password");
+    var emailvar = email.value;
+    var passwortvar = passwort.value;
+    
+    if(passwortvar == "fortnite" && emailvar == "epic@games.com"){
+    alert("Erfolgreich");
+    location.replace("Memory.html");
+    }
+    else{
+        alert("falsche E-Mail oder Passwort")
+    }
+    }
+    var log = document.getElementById("log");
+    log.addEventListener('click',login);
+     </script>
+</html>

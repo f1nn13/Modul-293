@@ -1,0 +1,39 @@
+.china {
+    width: 620px;
+    height: 600px;
+  
+}
+.rio {
+    width: 620px;
+    height: 600px;
+
+}
+#unten{
+    float:left;
+    z-index: -1;
+}
+#unten1{
+    float:left;
+    z-index: -1;
+}
+#oben{
+    position: absolute;
+    margin-left: 480px;
+    margin-top: 160px;
+    z-index: 10;
+}
+#oben1 {
+    position: absolute;
+    margin-top: 280px;
+    margin-left: 700px;
+    z-index: 10;
+    transform: rotate(30deg);
+}
+#oben2 {
+    position: absolute;
+    margin-top: 110px;
+    margin-left: 580px;
+    z-index: 11;
+    transform: rotate(-20deg);
+}
+/* Mit z-index kann man Bilder übereinander legen das Bild mit dem höchsten z-index steht dementsprechned zuoberst */
